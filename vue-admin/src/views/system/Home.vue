@@ -2,7 +2,7 @@
     <el-row class="container">
         <el-col :span="24" class="header">
             <el-col :span="6" class="logo" :class="{'is-active':isCollapse}">
-                <img src="../../assets/yimai1.png" >
+                <img src="../../assets/yimai.png" >
                 {{sysName}}
             </el-col>
             <el-col :span="2" class="tool">
@@ -26,7 +26,7 @@
                 <div style="width: 120px;" class="header_bar_div">
                     <img src="../../assets/user.png" class="header_bar_img" />
                     <el-dropdown trigger="hover">
-                        <span class="el-dropdown-link" style="color: #BFCBD9;">{{sysUserName}}</span>
+                        <span class="el-dropdown-link" style="color: #fff;">{{sysUserName}}</span>
                         <el-dropdown-menu slot="dropdown">
                             <el-dropdown-item>我的消息</el-dropdown-item>
                             <el-dropdown-item @click.native="pwdFormVisible=true">修改密码</el-dropdown-item>
@@ -180,9 +180,12 @@
 </script>
 
 <style scoped lang="scss">
-	$color-black : #2b3441;
-	$color-black2 : #202733;
+	/*$color-black : #2b3441;
+	$color-black2 : #202733;*/
 	$color-font-gray : #BFCBD9;
+	$color-black : #3c8dbc;
+	$color-black2 : #367fa9;
+	$color-font-gray : #fff;
     .container {
         position: absolute;
         top: 0px;

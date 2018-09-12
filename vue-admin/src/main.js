@@ -10,6 +10,8 @@ import localCache from './utils/localCache'
 import 'element-ui/lib/theme-default/index.css'
 import 'font-awesome/css/font-awesome.min.css'
 import 'src/theme/menu.css';
+import 'src/utils/mock'
+
 Vue.use(ElementUI)
 Vue.use(Vuex)
 

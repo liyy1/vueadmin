@@ -19,6 +19,7 @@ export const mlogin = Mock.mock('http://127.0.0.1/mms/system/login', {
     	"delete_flag":0
     }
 });
+
 export const mgetMenus = Mock.mock('http://127.0.0.1/mms/system/getMenusByRole', [
     {"id":1,"name":"系统主页","path":"/main","icon":"fa-university","leaf":1,"pid":0,"level":1,"type":1,"order":1,"deleteFlag":null,"children":null},
     {"id":2,"name":"系统管理","path":null,"icon":"el-icon-message","leaf":0,"pid":0,"level":1,"type":1,"order":2,"deleteFlag":null,
@@ -48,5 +49,19 @@ export const mgetMenus = Mock.mock('http://127.0.0.1/mms/system/getMenusByRole',
     {"id":10,"name":"测试模块5","path":"/main5","icon":"fa-map-o","leaf":1,"pid":0,"level":1,"type":1,"order":1,"deleteFlag":null,"children":null},
     {"id":11,"name":"测试模块6","path":"/main6","icon":"fa-newspaper-o","leaf":1,"pid":0,"level":1,"type":1,"order":1,"deleteFlag":null,"children":null}
 ]);
+
+export const mqueryuser = Mock.mock('http://127.0.0.1/mms/user/query',{
+	'rows|20': [{
+		'username': '@first',
+		'realname': '@name',
+		'age|1-100': 100,
+		'sex|1': [0, 1],
+		'phone': 15666664896,
+		'color': '@color',
+		'name|1': ['财务部', '综合部', '总经办', '研发部'],
+		'role|1': [1, 2, 3]
+	}],
+	'total|20-100': 100
+})
 
 
